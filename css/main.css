@@ -1,0 +1,142 @@
+.content{
+  width: 1187px;
+  height: 596px;
+  margin: auto;
+  border-top: 1px dashed #003F70;
+  border-bottom: 1px dashed #003F70;
+  position: relative;
+}
+.poster-wrap{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-top: 30px;
+}
+.poster-wrap p.poster-text:first-of-type{
+  width: 387px;
+  height: 50px;
+  background-color: #FF8946;
+  border-radius: 100px;
+  position: absolute;
+  color: #222222;
+  font-family: "Pretendard";
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 91.5px;
+  padding-top: 12.5px;
+  transform: translate(28px, 220px);
+  cursor: pointer;
+}
+.poster-wrap p.poster-text:last-of-type {
+  width: 387px;
+  height: 50px;
+  background-color: #FFFFE9;
+  border-radius: 100px;
+  position: absolute;
+  color: #222222;
+  font-family: "Pretendard";
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 75.5px;
+  padding-top: 12.5px;
+  transform: translate(479px, 220px);
+  cursor: pointer;
+}
+
+.icon-list{cursor: pointer;}
+.icon-list li{
+  width: 290px;
+  height: 60px;
+  border-radius: 12px;
+  background-color: #F5F5F5;
+  margin-bottom: 8px;
+  box-shadow: -1px -1px 1px #fff;
+  box-shadow: 1px 1px 2px rgba(17, 17, 0, 0.15);
+  color: #003F70;
+  font-family: "Pretendard";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -2.5%;
+  padding-left: 14px;
+  padding-top: 14px;
+  transition: 0.1s ease-in-out;
+}
+.icon-list li:hover{
+  background-color: #DFF1FF;
+}
+.icon-list img{
+  margin-right: 20px;
+}
+.icon-list span{
+  display: inline-block;
+  transform: translateY(-10px);
+}
+
+.news{
+  width: 1187px;
+  padding: 30px 0 ;
+  margin: auto;
+  border-bottom: 1px dashed #003F70;
+}
+.event{
+  width: 1188px;
+  height: 342px;
+  background-color: rgba(223, 241, 255, 0.3);
+  border-radius: 30px;
+  text-align: left;
+  margin-bottom: 30px;
+  box-shadow: -1px -1px 1px #fff;
+  box-shadow: 1px 1px 2px rgba(17,17,0,0.15);
+}
+.event h4{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Pretendard";
+  padding-top: 25.05px;
+  padding-left: 50px;
+  color: #222222;
+}
+.event p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Pretendard";
+  padding-left: 50px;
+  line-height: 36px;
+  color: #656565;
+}
+.event p:first-of-type { /* 이벤트 첫 p만 위 패딩 50px */
+  padding-top: 15px; 
+}
+.event b{
+  font-weight: 500;
+  color: #222222;
+}
+.blog{
+  width: 1188px;
+  height: 342px;
+  background-color: rgba(233, 233, 233, 0.3);
+  border-radius: 30px;
+  text-align: left;
+  box-shadow: -1px -1px 1px #fff;
+  box-shadow: 1px 1px 2px rgba(17,17,0,0.15);
+}
+.blog h4{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Pretendard";
+  padding-top: 25.05px;
+  padding-left: 50px;
+  color: #222222;
+}
+.blog p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Pretendard";
+  padding-left: 50px;
+  line-height: 36px;
+  color: #656565;
+}
+.blog p:first-of-type {
+  padding-top: 15px; 
+}

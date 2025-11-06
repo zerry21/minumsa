@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINUMSA</title>
+  <link rel="icon" href="img/favicon.ico">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/book.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault(); // 텍스트 드래그 방지
+  });
+
+  document.addEventListener('copy', function (e) {
+    e.preventDefault(); // Ctrl + C 복사 방지
+  });
+
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault(); // 오른쪽 클릭 방지
+  });
+
+  $(document).ready(function () {
+      const $hamburgerBtn = $('.hambugerbtn'); // 햄버거 버튼
+      const $hamburgerMenu = $('.hambuger');   // 숨겨진 메뉴
+
+      // 햄버거 클릭 시 메뉴 열기/닫기
+      $hamburgerBtn.click(function () {
+        $hamburgerMenu.toggleClass('active');
+      });
+    });
+</script>
+</head>
+
+<body>
+    <div class="header">
+      <div class="top_bar">
+        <ul class="menu">
+          <li>민음사 출판 그룹</li>
+          <li><a href="index.html">민음사</a></li>
+          <li><a href="index2.html"><span>황금가지</span></a></li>
+          <li>사이언스북스</li>
+          <li>세미콜론</li>
+          <li>민음인</li>
+          <li>판미동</li>
+          <li>반비</li>
+          <li>펄프</li>
+          <li>비룡소</li>
+        </ul>
+      </div>
+      <div class="gnb">
+        <h2><a href="index.html">민음사</a></h2>
+        <ul class="nav">
+          <li><a href="book.html">도서</a></li>
+          <li><a href="award.html">문학상</a></li>
+          <li>북클럽</a></li>
+          <li>소개</a></li>
+          <li>이벤트</a></li>
+          <li>커뮤니티</a></li>
+          <li>그룹소개</a></li>
+          <li class="hambugerbtn"><img src="img/hambuger.png" alt=""></li>
+          <li class="search"><a href="#"><img src="img/search.png" alt="">search...</a></li>
+          <li class="login"><a href="#"><img src="img/login.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="hambuger">
+      <div class="hmenu">
+        <article>
+          <h3><a href="book.html">도서</a></h3>
+          <ul>
+            <li>전체 도서</li>
+            <li>베스트</li>
+            <li>카테고리</li>
+            <li>전자책</li>
+            <li>독자리뷰</li>
+            <li>동네서점</li>
+            <li>민음사 추천</li>
+          </ul>
+        </article>
+        <article>
+          <h3><a href="award.html">문학상</a></h3>
+          <ul>
+            <li>오늘의 작가상</li>
+            <li>김수영 문학상</li>
+          </ul>
+        </article>
+        <article>
+          <h3>북클럽</h3>
+          <ul>
+            <li>릿터 정기구독</li>
+            <li>한편 정기구독</li>
+            <li>민음사멤버쉽</li>
+            <li>민음북클럽</li>
+            <li>패밀리데이</li>
+            <li>민음북샵</li>
+            <li>민음커뮤니티</li>
+            <li>e스탬프</li>
+            <li>동네서점</li>
+            <li>독서모임달력</li>
+          </ul>
+        </article>
+        <article>
+          <h3>소개</h3>
+          <ul>
+            <li>민음사</li>
+          </ul>
+        </article>
+        <article>
+          <h3>이벤트</h3>
+          <ul>
+            <li>진행 / 대기</li>
+            <li>발표 / 종료</li>
+            <li>전체 보기</li>
+          </ul>
+        </article>
+        <article>
+          <h3>커뮤니티</h3>
+          <ul>
+            <li>소식 &amp; 공지</li>
+            <li>행사 스케치</li>
+            <li>자료실</li>
+            <li>커뮤니티</li>
+            <li>동영상 자료</li>
+            <li>책의 사생활</li>
+            <li>연재</li>
+            <li>보도 자료</li>
+            <li>원고 투고</li>
+            <li><span>2차 저작권</span></li>
+            <li>1:1 문의</li>
+          </ul>
+        </article>
+        <article>
+          <h3>그룹소개</h3>
+          <ul>
+            <li>브랜드 소개</li>
+            <li>인사말</li>
+            <li>역사</li>
+            <li>채용정보</li>
+            <li>거래처 안내</li>
+            <li>찾아오시는 길</li>
+          </ul>
+        </article>
+        <article>
+          <h3>기타</h3>
+          <ul>
+            <li>출판그룹 도서 DB</li>
+            <li>출판그룹 작가 DB</li>
+            <li>도서목록 다운로드</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="book">
+    <div class="book-main">
+      <div class="book-header">
+        <h1>민음사 전체 도서</h1>
+        <p>신간순</p>
+        <a class="search"><img src="img/search.png" alt="">search...</a>
+      </div>
+      <div class="books">
+        <div class="box">
+          <img src="img/litter.png" alt="">
+          <h3>릿터 55호 (2025.08 - 2025.09)</h3>
+          <p><span>시리즈</span> 격월간 문학잡지 릿터 55 <span>| 기획</span> 민음사 편집부</p>
+          <p><span>출간일</span> 2025년 08월 05일</p>
+          <div class="btn">
+            <ul>
+              <li>크게 보기</li>
+              <li>미리 보기</li>
+              <li>독자 리뷰</li>
+            </ul>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/the life.png" alt="">
+          <h3>예수의 생애</h3>
+          <p><span>글</span> 찰스 디킨스 <span>| 옮김</span> 황소연</p>
+          <p><span>연령</span> 8세 이상 <span>| 출간일 2025년 07월 25일</span></p>
+          <div class="btn">
+            <ul>
+              <li>크게 보기</li>
+              <li>미리 보기</li>
+              <li>독자 리뷰</li>
+            </ul>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/summer porem.png" alt="">
+          <h3>[2025 워터프루프북] 여름에 더 좋은 시</h3>
+          <p><span>글</span> 배수연, 허주영, 김이듬, 박정대, 김행숙, 문혜진 여세실 ···</p>
+          <p><span>출간일</span> 2025년 07월 23일</p>
+          <div class="btn">
+            <ul>
+              <li>크게 보기</li>
+              <li>미리 보기</li>
+              <li>독자 리뷰</li>
+            </ul>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/summer social.png" alt="">
+          <h3>[2025 워터프루프북] 여름에 더 좋은 소설</h3>
+          <p><span>글</span> 박솔뫼, 이유리 </p>
+          <p><span>출간일</span> 2025년 07월 23일</p>
+          <div class="btn">
+            <ul>
+              <li>크게 보기</li>
+              <li>미리 보기</li>
+              <li>독자 리뷰</li>
+            </ul>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/smile.png" alt="">
+          <h3>꽤 낙천적인 아이</h3>
+          <p><span>글</span> 원소윤</p>
+          <p><span>출간일</span> 2025년 07월 18일</p>
+          <div class="btn">
+            <ul>
+              <li>크게 보기</li>
+              <li>미리 보기</li>
+              <li>독자 리뷰</li>
+            </ul>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/no.png" alt="">
+          <h3>소설 쓰기 싫은 날</h3>
+          <p><span>시리즈</span> 매일과 영원 12 <span>| 글</span>오한기</p>
+          <p><span>출간일</span> 2025년 07월 18일</p>
+          <div class="btn">
+            <ul>
+              <li>크게 보기</li>
+              <li>미리 보기</li>
+              <li>독자 리뷰</li>
+            </ul>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/aroow.png" alt="">
+          <h3>화살기도</h3>
+          <p><span>시리즈</span> 민음의 시 334<span>| 글</span> 여세실</p>
+          <p><span>출간일</span> 2025년 07월 11일</p>
+          <div class="btn">
+            <ul>
+              <li>크게 보기</li>
+              <li>미리 보기</li>
+              <li>독자 리뷰</li>
+            </ul>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/note.png" alt="">
+          <h3>싱클레어 노트</h3>
+          <p><span>시리즈</span> 쏜살문고 <span>| 글</span> 헤르만 헤세 <span>| 옮김 </span> 박광자</p>
+          <p><span>출간일</span> 2025년 06월 27일</p>
+          <div class="btn">
+            <ul>
+              <li>크게 보기</li>
+              <li>미리 보기</li>
+              <li>독자 리뷰</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pagination">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>5</p>
+          </div>
+        </div>
+      </div>
+      <div class="book-side">
+        <ul class="book-icon">
+          <li><a href="#"><img src="img/instagram.png"><img src="img/naver.png"><img src="img/twitter.png"><img
+                src="img/facebook.png"></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <p class="txt">회원약관 | <span class="highlight"> 개인정보처리방침 </span> | 제휴 및 1:1 문의 | FAQ | <span class="highlight"> 저작권
+        문의 가이드: </span> 국내 저작물 / 해외 저작물 | 위치 및 연락처 | 사이트맵 | 민음사 도서 RSS | ENGLISH
+    </p>
+    <P class="txt1">(주)민음북스 | 대표이사: 박상준 | 사업자등록번호: 211-88-41803 | 통신판매업 신고번호: 제2010-서울강남-00971호
+      <br> 주소: 서울시 강남구 도산대로 1길 62 5층
+      <br> 전화: 02-515-2000 | webmaster@minumsa.com
+    </P>
+    <ul class="sns">
+      <li><a href="#"><img src="img/instagram (2).png"></a></li>
+      <li><a href="#"><img src="img/naver (2).png"></a></li>
+      <li><a href="#"><img src="img/twitter (2).png"></a></li>
+      <li><a href="#"><img src="img/facebook (2).png"></a></li>
+    </ul>
+    <p class="txt2">copyright © Minumsa Publishing Group</p>
+    <h1>MINUMSA</h1>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoldenBough</title>
+  <link rel="icon" href="img/favicon.ico">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/header2.css" rel="stylesheet">
+  <link href="css/main2.css" rel="stylesheet">
+  <link href="css/footer2.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    document.addEventListener('selectstart', function (e) {
+      e.preventDefault(); // 텍스트 드래그 방지
+    });
+
+    document.addEventListener('copy', function (e) {
+      e.preventDefault(); // Ctrl + C 복사 방지
+    });
+
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault(); // 오른쪽 클릭 방지
+    });
+
+    $(document).ready(function () {
+      const $hamburgerBtn = $('.hambugerbtn'); // 햄버거 버튼
+      const $hamburgerMenu = $('.hambuger');   // 숨겨진 메뉴
+
+      // 햄버거 클릭 시 메뉴 열기/닫기
+      $hamburgerBtn.click(function () {
+        $hamburgerMenu.toggleClass('active');
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="top_bar">
+        <ul class="menu">
+          <li>민음사 출판 그룹</li>
+          <li><a href="index.html"><span>민음사</span></a></li>
+          <li><a href="index2.html">황금가지</a></li>
+          <li>사이언스북스</li>
+          <li>세미콜론</li>
+          <li>민음인</li>
+          <li>판미동</li>
+          <li>반비</li>
+          <li>펄프</li>
+          <li>비룡소</li>
+        </ul>
+      </div>
+      <div class="gnb">
+        <h2><a href="index2.html">황금가지</a></h2>
+        <ul class="nav">
+          <li><a href="book2.html">도서</a></li>
+          <li><a href="intro.html">소개</a></li>
+          <li>이벤트</li>
+          <li>커뮤니티</li>
+          <li>그룹소개</li>
+          <li class="hambugerbtn"><img src="img/hambuger.png" alt=""></li>
+          <li class="search"><a href="#"><img src="img/search.png" alt="">search...</a></li>
+          <li class="login"><a href="#"><img src="img/login.png" alt=""></a></li>
+        </ul>
+      </div>
+
+      <div class="hambuger">
+        <div class="hmenu">
+          <article>
+            <h3><a href="book2.html">도서</a></h3>
+            <ul>
+              <li>전체 도서</li>
+              <li>베스트</li>
+              <li>카테고리</li>
+              <li>전자책</li>
+              <li>시리즈</li>
+            </ul>
+          </article>
+          <article>
+            <h3><a href="intro.html">소개</a></h3>
+          </article>
+          <article>
+            <h3>이벤트</h3>
+            <ul>
+              <li>진행 / 대기</li>
+              <li>발표 / 종료</li>
+              <li>전체 보기</li>
+            </ul>
+          </article>
+          <article>
+            <h3>커뮤니티</h3>
+            <ul>
+              <li>소식 &amp; 공지</li>
+              <li>행사 스케치</li>
+              <li>자료실</li>
+              <li>커뮤니티</li>
+              <li>동영상 자료</li>
+              <li>책의 사생활</li>
+              <li>연재</li>
+              <li>보도 자료</li>
+              <li>원고 투고</li>
+              <li><span>2차 저작권</span></li>
+              <li>1:1 문의</li>
+            </ul>
+          </article>
+          <article>
+            <h3>그룹소개</h3>
+            <ul>
+              <li>브랜드 소개</li>
+              <li>인사말</li>
+              <li>역사</li>
+              <li>채용정보</li>
+              <li>거래처 안내</li>
+              <li>찾아오시는 길</li>
+            </ul>
+          </article>
+          <article>
+            <h3>기타</h3>
+            <ul>
+              <li>출판그룹 도서 DB</li>
+              <li>출판그룹 작가 DB</li>
+              <li>도서목록 다운로드</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <label class="switch">
+        <span class="slider">
+          <span class="circle"></span>
+        </span>
+        <span class="label-text">신간</span>
+      </label>
+      <div class="image">
+        <img class="booknew on" src="img/new2.png" alt="신간">
+        <img class="bookbest" src="img/best2.png" alt="베스트">
+        <img class="bookmvp" src="img/mvp2.png" alt="대표">
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="poster-wrap">
+        <img class="poster" src="img/g.png" alt="">
+        <p class="poster-text"> 브릿G 바로가기</p>
+        <img class="poster" src="img/pcbook.png" alt="">
+        <p class="poster-text">전자책 보러가기</p>
+        <div class="icon">
+          <ul class="icon-list">
+            <li><img src="img/choice.png"><span>황금가지 네이버 포스트</span></li>
+            <li><img src="img/choice.png"><span>황금가지 인스타그램</span></li>
+            <li><img src="img/choice.png"><span>황금가지 페이스북</span></li>
+            <li><img src="img/choice.png"><span>황금가지 편집장 트위터</span></li>
+            <li><img src="img/choice.png"><span>브릿G 트위터</span></li>
+            <li><img src="img/choice.png"><span>이영도 작가 출간 네이버 카페</span></li>
+            <li><img src="img/choice.png"><span>황금가지 네이버 포스트</span></li>
+            <li><img src="img/choice.png"><span>밀리언셀러 클럽 네이버 카페</span></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="news">
+      <div class="event">
+        <h4>관련소식 &amp; 진행중인 이벤트</h4>
+        <p><b>[소식]</b> [공지] 홈페이지 서버 점검 안내</p>
+        <p><b>[소식]</b> 민음사 <오늘의 작가상> 장편소설 공모 (~2025.02.28) | 2024.11.01</p>
+        <p><b>[소식]</b> [공지] 홈페이지 서버 이전 및 서비스 중단 안내 | 2024.11.01</p>
+        <p><b>[소식]</b> 개인정보처리방침 개정 시행 안내 | 2017.09.21</p>
+        <p><b>[소식]</b> 제 9회 [세계의 문학 신인상] 소설 부문 수상 소감 - 김세희 | 20215.03.25</p>
+        <p><b>[소식]</b> 제 9회 [세계의 문학 신인상] 시 부문 수상 소감 - 임정민 | 2015.03.25</p>
+        <p><b>[소식]</b> 이기호 『차남들의 세계사』, 제 47회 한국일보문학상 수상 | 2015.01.14</p>
+      </div>
+      <div class="blog">
+        <h4>오디오 북</h4>
+        <p>[오디오북] 직장 상사 악령 퇴치부</p>
+        <p>[오디오북] 내가 죽기 일주일 전</p>
+        <p>[오디오북] 새들이 집</p>
+        <p>[오디오북] 용의 만화경 (전 7편 합본)</p>
+        <p>[오디오북] 떠나가는 관들에게 (합본)</p>
+        <p>[오디오북] 떠나가는 관들에게 큐레이션 오디오북1</p>
+        <p>[오디오북] 낙성동 소시민 탐구 일지</p>
+      </div>
+      <h1>Golden <br> Bough</h1>
+      <div class="box"></div>
+    </div>
+    <div class="footer">
+      <p class="txt">회원약관 | <span class="highlight"> 개인정보처리방침 </span> | 제휴 및 1:1 문의 | FAQ | <span class="highlight">
+          저작권 문의 가이드:
+        </span> 국내 저작물 / 해외 저작물 | 위치 및 연락처 | 사이트맵 | 민음사 도서 RSS | ENGLISH
+      </p>
+      <P class="txt1">(주)민음북스 | 대표이사: 박상준 | 사업자등록번호: 211-88-41803 | 통신판매업 신고번호: 제2010-서울강남-00971호
+        <br> 주소: 서울시 강남구 도산대로 1길 62 5층
+        <br> 전화: 02-515-2000 | webmaster@minumsa.com
+      </P>
+      <ul class="sns">
+        <li><a href="#"><img src="img/instagram (2).png"></a></li>
+        <li><a href="#"><img src="img/naver(3).png"></a></li>
+        <li><a href="#"><img src="img/twitter (3).png"></a></li>
+        <li><a href="#"><img src="img/facebook (3).png"></a></li>
+      </ul>
+      <p class="txt2">copyright © Minumsa Publishing Group</p>
+      <h1>GoldenBough</h1>
+    </div>
+  </div>
+
+  <script>
+    const switchLabel = document.querySelector(".switch");
+    const labelText = switchLabel.querySelector(".label-text");
+    const circle = switchLabel.querySelector(".circle");
+
+    const newBook = document.querySelector(".booknew");
+    const bestBook = document.querySelector(".bookmvp");
+    const mvpBook = document.querySelector(".bookbest");
+
+    let state = 0; // 0=신간, 1=mvp, 2=best
+
+    switchLabel.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      state = (state + 1) % 3;
+
+      if (state === 0) {
+        labelText.textContent = "신간";
+        circle.style.left = "1.5px"; // new 위치
+        newBook.style.display = "block";
+        bestBook.style.display = "none";
+        mvpBook.style.display = "none";
+      } else if (state === 1) {
+        labelText.textContent = "대표";
+        circle.style.left = "17px"; // best 위치
+        newBook.style.display = "none";
+        bestBook.style.display = "block";
+        mvpBook.style.display = "none";
+      } else {
+        labelText.textContent = "베스트";
+        circle.style.left = "32px"; // mvp 위치
+        newBook.style.display = "none";
+        bestBook.style.display = "none";
+        mvpBook.style.display = "block";
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoldenBough</title>
+  <link rel="icon" href="img/favicon.ico">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/intro.css" rel="stylesheet">
+  <link href="css/footer2.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    document.addEventListener('selectstart', function (e) {
+      e.preventDefault(); // 텍스트 드래그 방지
+    });
+
+    document.addEventListener('copy', function (e) {
+      e.preventDefault(); // Ctrl + C 복사 방지
+    });
+
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault(); // 오른쪽 클릭 방지
+    });
+
+    $(document).ready(function () {
+      const $hamburgerBtn = $('.hambugerbtn'); // 햄버거 버튼
+      const $hamburgerMenu = $('.hambuger');   // 숨겨진 메뉴
+
+      // 햄버거 클릭 시 메뉴 열기/닫기
+      $hamburgerBtn.click(function () {
+        $hamburgerMenu.toggleClass('active');
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="top_bar">
+        <ul class="menu">
+          <li>민음사 출판 그룹</li>
+          <li><a href="index.html"><span>민음사</span></a></li>
+          <li><a href="index2.html">황금가지</a></li>
+          <li>사이언스북스</li>
+          <li>세미콜론</li>
+          <li>민음인</li>
+          <li>판미동</li>
+          <li>반비</li>
+          <li>펄프</li>
+          <li>비룡소</li>
+        </ul>
+      </div>
+      <div class="gnb">
+        <h2><a href="index2.html">황금가지</a></h2>
+        <ul class="nav">
+          <li><a href="book2.html">도서</a></li>
+          <li><a href="intro.html">소개</a></li>
+          <li>이벤트</li>
+          <li>커뮤니티</li>
+          <li>그룹소개</li>
+          <li class="hambugerbtn"><img src="img/hambuger.png" alt=""></li>
+          <li class="search"><a href="#"><img src="img/search.png" alt="">search...</a></li>
+          <li class="login"><a href="#"><img src="img/login.png" alt=""></a></li>
+        </ul>
+      </div>
+
+      <div class="hambuger">
+        <div class="hmenu">
+          <article>
+            <h3><a href="book2.html">도서</a></h3>
+            <ul>
+              <li>전체 도서</li>
+              <li>베스트</li>
+              <li>카테고리</li>
+              <li>전자책</li>
+              <li>시리즈</li>
+            </ul>
+          </article>
+          <article>
+            <h3><a href="#">소개</a></h3>
+          </article>
+          <article>
+            <h3>이벤트</h3>
+            <ul>
+              <li>진행 / 대기</li>
+              <li>발표 / 종료</li>
+              <li>전체 보기</li>
+            </ul>
+          </article>
+          <article>
+            <h3>커뮤니티</h3>
+            <ul>
+              <li>소식 &amp; 공지</li>
+              <li>행사 스케치</li>
+              <li>자료실</li>
+              <li>커뮤니티</li>
+              <li>동영상 자료</li>
+              <li>책의 사생활</li>
+              <li>연재</li>
+              <li>보도 자료</li>
+              <li>원고 투고</li>
+              <li><span>2차 저작권</span></li>
+              <li>1:1 문의</li>
+            </ul>
+          </article>
+          <article>
+            <h3>그룹소개</h3>
+            <ul>
+              <li>브랜드 소개</li>
+              <li>인사말</li>
+              <li>역사</li>
+              <li>채용정보</li>
+              <li>거래처 안내</li>
+              <li>찾아오시는 길</li>
+            </ul>
+          </article>
+          <article>
+            <h3>기타</h3>
+            <ul>
+              <li>출판그룹 도서 DB</li>
+              <li>출판그룹 작가 DB</li>
+              <li>도서목록 다운로드</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro">
+      <div class="intro-main">
+        <div class="intro-header">
+          <h1>소개</h1>
+        </div>
+        <div class="inimg">
+          <img src="img/g.png" alt="">
+          <img src="img/grandmother.jpg" alt="">
+          <img src="img/die.png" alt="">
+          <img src="img/like.png" alt="">
+          <img src="img/law.png" alt="">
+          <img src="img/opendoor.png" alt="">
+        </div>
+        <div class="inbox">
+          <img src="img/golden.png">
+          <div class="intxt">
+            <p>황금가지는 문학의 새로운 흐름을 주도하는 (주)민음인의 픽션 브랜드 입니다.<br>
+            SF, 추리, 판타지, 호러 등 주류 문학의 변방에 있던 젊은 문학의 흐름들에 관심을 기울여 그 내용을 꾸준히 책의 형식에 담아왔습니다. <br><br>
+            시대가 원한 새로운 문학의 바람을 주도한 황금가지는, 한국 사회에서 성권력에 대한 전복적 상상력을 촉발시킨 <이갈리아의 딸들>을 시작으로 한국에서 판타지 문학의 붐을 주도했던 <드래곤 라자>, 고전 추리소설 열풍을 선도한 <셜록 홈즈 전집>, 극내에서는 생소한 ‘반지의제왕’ 열풍을 몰고 온 톨킨의 <반지의 제왕>, 공포의 거장 <러브 크래프트 전집> 등 한국 장르 문학에 새로운 트랜드를 만들어 왔습니다. <br><br>
+            무엇보다도 국내 장르 문학 발전에 이바지하고자 국내 작가 발굴에 힘을 쓰고 있습니다. 밀리언셀러를 기록한 이영도 작가의 작품을 비롯하여 <팔란티어>, <B컷>, <이프> 등
+            국내 장르 작가들의 대표적인 장편들을 최초 소개하는 한편, <한국 공포 문학 단편선>, <한국 SF단편선>, <한국 환상 문학 단편선>, <한국 추리 스릴러 단편선>을 꾸준히 출간하여 장르 문학의 토대가 되는 작가군 양성에 힘을 쓰고 있습니다.</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="intro-side">
+      <ul class="intro-icon">
+        <li><a href="#"><img src="img/instagram(4).png"><img src="img/naver(4).png"><img src="img/twitter(4).png"><img
+              src="img/facebook(4).png"></a></li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+  <div class="footer">
+    <p class="txt">회원약관 | <span class="highlight"> 개인정보처리방침 </span> | 제휴 및 1:1 문의 | FAQ | <span class="highlight">
+        저작권 문의 가이드:
+      </span> 국내 저작물 / 해외 저작물 | 위치 및 연락처 | 사이트맵 | 민음사 도서 RSS | ENGLISH
+    </p>
+    <P class="txt1">(주)민음북스 | 대표이사: 박상준 | 사업자등록번호: 211-88-41803 | 통신판매업 신고번호: 제2010-서울강남-00971호
+      <br> 주소: 서울시 강남구 도산대로 1길 62 5층
+      <br> 전화: 02-515-2000 | webmaster@minumsa.com
+    </P>
+    <ul class="sns">
+      <li><a href="#"><img src="img/instagram (2).png"></a></li>
+      <li><a href="#"><img src="img/naver(3).png"></a></li>
+      <li><a href="#"><img src="img/twitter (3).png"></a></li>
+      <li><a href="#"><img src="img/facebook (3).png"></a></li>
+    </ul>
+    <p class="txt2">copyright © Minumsa Publishing Group</p>
+    <h1>GoldenBough</h1>
+  </div>
+  </div>
+</body>
+
+</html>
