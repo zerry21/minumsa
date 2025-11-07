@@ -132,7 +132,7 @@ li.search a {
 .intro {
   width: 1189px;
   height: 850px;
-  margin: auto;
+  margin-left: 365px; /* margin: auto; */
   display: flex;
 }
 .intro-main {

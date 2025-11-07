@@ -1,7 +1,7 @@
 .content{
   width: 1187px;
   height: 596px;
-  margin: auto;
+  margin-left: 363px ;/* margin: auto; */
   border-top: 1px dashed #F6B352;
   border-bottom: 1px dashed #F6B352;
   position: relative;
@@ -74,7 +74,7 @@
 .news{
   width: 1187px;
   padding: 30px 0 ;
-  margin: auto;
+  margin-left: 363px ;/* margin: auto; */
   border-bottom: 1px dashed #F6B352;
   position: relative;
 }

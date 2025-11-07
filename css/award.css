@@ -142,7 +142,7 @@ li.search a {
 .award {
   width: 1189px;
   height: 2200px;
-  margin: auto;
+  margin-left: 365px; /* margin: auto; */
   display: flex;
 }
 
