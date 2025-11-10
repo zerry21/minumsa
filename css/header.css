@@ -1,7 +1,7 @@
 .top_bar {
   width: 1920px;
   height: 50px;
-  font-family: "Partial Sans KR";
+  font-family: "Partial Sans KR", "Noto Sans KR";
   background-color: #003F70;
   color: #E9E9E9;
   font-size: 13px;
@@ -52,7 +52,7 @@
   align-items: center;
   justify-content: flex-end;
   gap: 30px;
-  margin-left: 239px;
+  margin-left: 170px;
 }
 
 .nav li:hover {

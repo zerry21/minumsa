@@ -1,4 +1,27 @@
-* {margin: 0; padding: 0; box-sizing: border-box;}
-ul,li {list-style: none;}
-a{text-decoration: none; color: inherit;}
-body{font-family: "Pretendarad";}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Pretendarad";
+}
+
+@font-face {
+  font-family: "Partial Sans KR";
+  src: url("../font/PartialSansKR-Regular.woff2") format("woff2"),
+    url("../font/PartialSansKR-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
