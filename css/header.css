@@ -162,8 +162,8 @@ li.search a {
   position: absolute;
   width: 21px;
   height: 21px;
-  left: 1.5px;
-  top: 1.5px;
+  left: 2.5px;
+  top: 2.2px;
   background-color: #003F70;
   border-radius: 50%;
   transition: transform 0.3s;
